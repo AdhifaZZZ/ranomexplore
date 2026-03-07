@@ -26,7 +26,7 @@ background:rgba(0,0,0,0.3);
 }
 
 .logo{
-width:500px;
+max-width:100%;
 height:auto;
 display:block;
 margin:auto;
@@ -305,4 +305,34 @@ font-size:17px;
 margin-top:15px;
 font-style:italic;
 opacity:0.9;
+}
+
+@media (max-width: 768px){
+
+body{
+padding:10px;
+}
+
+h1{
+font-size:28px;
+text-align:center;
+}
+
+.menu{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.menu a{
+width:80%;
+text-align:center;
+}
+
+img{
+max-width:100%;
+height:auto;
+}
+
 }
