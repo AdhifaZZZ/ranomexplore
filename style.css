@@ -66,6 +66,8 @@ padding:80px 20px;
 text-align:center;
 }
 
+/* CARD */
+
 .cards{
 display:flex;
 justify-content:center;
@@ -103,157 +105,7 @@ padding:20px;
 background:rgba(0,0,0,0.4);
 }
 
-.misi{
-max-width:600px;
-margin:auto;
-text-align:left;
-}
-
-.struktur{
-margin-top:10px;
-line-height:1.8;
-}
-
-.struktur-org{
-text-align:center;
-margin-top:30px;
-}
-
-.ketua{
-display:inline-block;
-padding:10px 20px;
-background:#ffd94d;
-color:black;
-border-radius:8px;
-font-weight:bold;
-}
-
-.line{
-width:2px;
-height:30px;
-background:white;
-margin:10px auto;
-}
-
-.row{
-display:flex;
-justify-content:center;
-gap:40px;
-margin:15px 0;
-}
-
-.box{
-background:rgba(255,255,255,0.3);
-padding:10px 20px;
-border-radius:8px;
-font-weight:bold;
-}
-
-.org-chart ul {
-padding-top: 20px;
-position: relative;
-display: flex;
-justify-content: center;
-}
-
-.org-chart li {
-list-style: none;
-text-align: center;
-position: relative;
-padding: 10px 5px 0 5px;
-}
-
-.org-chart li::before, 
-.org-chart li::after{
-content:'';
-position:absolute;
-top:0;
-right:50%;
-border-top:2px solid white;
-width:50%;
-height:20px;
-}
-
-.org-chart li::after{
-right:auto;
-left:50%;
-border-left:2px solid white;
-}
-
-.org-chart li:only-child::after, 
-.org-chart li:only-child::before{
-display:none;
-}
-
-.org-chart ul ul::before{
-content:'';
-position:absolute;
-top:0;
-left:50%;
-border-left:2px solid white;
-width:0;
-height:20px;
-}
-
-.title{
-display:inline-block;
-padding:10px 20px;
-background:linear-gradient(135deg,#2ecc71,#3498db);
-border-radius:8px;
-color:white;
-font-weight:bold;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-}
-
-.struktur{
-text-align:center;
-padding:50px;
-}
-
-.org{
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-
-.level{
-display:flex;
-gap:60px;
-margin:20px 0;
-}
-
-.member{
-background:rgba(255,255,255,0.15);
-padding:15px;
-border-radius:10px;
-width:250px;
-backdrop-filter: blur(5px);
-border:1px solid rgba(255,255,255,0.3);
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-.member img{
-width:120px;
-height:120px;
-border-radius:50%;
-border:4px solid #4CAF50;
-}
-
-.member h3{
-margin:10px 0 5px;
-color:#333;
-}
-
-.member p{
-font-size:14px;
-color:gray;
-}
-
-.line{
-width:2px;
-height:40px;
-background:white;
-}
+/* VISI MISI */
 
 .visi-misi{
 display:flex;
@@ -286,6 +138,8 @@ padding-left:20px;
 margin-bottom:10px;
 }
 
+/* ARTI RANOM */
+
 .arti-ranom{
 margin-top:30px;
 text-align:center;
@@ -308,64 +162,116 @@ font-style:italic;
 opacity:0.9;
 }
 
-@media (max-width: 768px){
+/* STRUKTUR ORGANISASI */
+
+.struktur{
+text-align:center;
+padding:50px;
+}
+
+.org{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.level{
+display:flex;
+gap:60px;
+margin:20px 0;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.member{
+background:rgba(255,255,255,0.15);
+padding:15px;
+border-radius:10px;
+width:250px;
+backdrop-filter: blur(5px);
+border:1px solid rgba(255,255,255,0.3);
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.member img{
+width:120px;
+height:120px;
+border-radius:50%;
+border:4px solid #4CAF50;
+object-fit:cover;
+}
+
+.member h3{
+margin:10px 0 5px;
+color:#333;
+}
+
+.member p{
+font-size:14px;
+color:gray;
+}
+
+.line{
+width:2px;
+height:40px;
+background:white;
+margin:auto;
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width:768px){
 
 body{
 padding:10px;
 }
 
 h1{
-font-size:28px;
-text-align:center;
+font-size:26px;
 }
 
-.menu{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:10px;
-}
-
-.menu a{
-width:80%;
-text-align:center;
-}
-
-img{
-max-width:100%;
-height:auto;
-}
-
-
-@media (max-width: 768px){
-
-.about-container{
-max-width:1000px;
-width:90%;
-margin:auto;
-text-align:center;
-}
-
-.about-container img{
-width:100%;
-height:auto;
-}
-
-.about-container p{
-font-size:16px;
-line-height:1.6;
-}
-
-@media (max-width:768px){
-
-.org-container{
+nav ul{
 flex-direction:column;
 align-items:center;
 }
 
-.org-card{
-max-width:350px;
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
 width:90%;
+}
+
+.visi-misi{
+flex-direction:column;
+align-items:center;
+}
+
+.box{
+width:90%;
+}
+
+.level{
+flex-direction:column;
+align-items:center;
+gap:25px;
+}
+
+.member{
+width:90%;
+max-width:300px;
+}
+
+.member img{
+width:100px;
+height:100px;
+}
+
+section{
+padding:50px 15px;
 }
 
 }
