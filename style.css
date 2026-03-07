@@ -274,4 +274,11 @@ section{
 padding:50px 15px;
 }
 
+nav a{
+display:block;
+margin:12px 0;
+width:200px;
+text-align:center;
+}
+
 }
