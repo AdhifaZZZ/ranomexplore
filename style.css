@@ -339,6 +339,7 @@ height:auto;
 @media (max-width: 768px){
 
 .about-container{
+max-width:1000px;
 width:90%;
 margin:auto;
 text-align:center;
